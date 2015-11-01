@@ -42,7 +42,7 @@
 								<a href="index.html" >Главная</a>
 							</li>
 							<li>
-								<a href="about.html" class="active">О компании</a>
+								<a href="about.html" >О компании</a>
 							</li>
 							<li>
 								<a href="uslugi.html" >Услуги</a>
@@ -63,7 +63,23 @@
 								</div>
 							</li>
 							<li>
-								<a href="">Каталог товаров</a>
+								<a href="" class="active">Каталог товаров</a>
+								<div id="menu_body" >
+									<ul class="product">
+										<li><a href="#" onclick="openMenu('sub_menu_1');return(false)">Решение по солнцу</a>
+											<ul id="sub_menu_1" >
+												 <li><a href="#">Lorem ipsum  </a></li>
+												   <li><a href="#">Lorem ipsum  </a></li>
+											</ul>
+										</li>
+										<li><a href="#">Решение по ветру</a>
+										</li>
+										<li><a href="#">Решение по энергоэффективности</a>
+										</li>
+										<li><a href="#">Решение по биогазу</a>
+										</li>
+									</ul>
+								</div>
 							</li>
 							<li>
 								<a href="project.html" >Проекты</a>
@@ -97,37 +113,35 @@
 				</div>
 			</div>
 		</header>
+
 		<div class="container">
 			<div class="cr">
-				<div class="content">
-					<div class="content_des_title">Energy Ecology Engineering</div>
-					<div class="content_about">
-						<div class="content_des_img">
-							<img src="img/chel.jpg" alt=""/>
-						</div>
-						<div class="content_about_title">Energy Ecology Engineering</div>
-						<p>
-							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-						</p>
-						<p>
-							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book...
-						</p>
-						<p>
-							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-						</p>
-						<p>
-							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book....Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-						</p>
-						<p>
-							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book....Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book....Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book....Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book....
-						</p>
-						<p>
-							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book....
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book....
-						</p>
+				<div class="left_side_bar">
+					<div class="content_des_title">Навигация</div>
+					<div class="title_side_bar">
+						
 					</div>
-				</div>
-				<div class="side_bar">
+					<div class="mini-menu">
+						<ul>
+							<li class="sub">
+								<a href="#">Решение по солнцу </a>
+								<ul>
+								   <li><a href="#">Lorem ipsum </a></li>
+								   <li><a href="#">Lorem ipsum </a></li>
+								</ul>
+							</li>
+							<li class="sub">
+								<a href="#">Решение по ветру</a>
+							</li>
+							<li class="sub">
+								<a href="#">Решение по энергоэффективности</a>
+							</li>
+							<li class="sub">
+								<a href="#">Решение по биогазу</a>
+							</li>
+						</ul>
+					</div>
+					<div class="side_bar">
 					<div class="news">
 						<div class="content_des_title">Новости</div>
 						<div class="news_item">
@@ -158,6 +172,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 							<p>Printing  somthing like that very good website printing...</p>
 						</div>
 					</div>
+					<!--
 					<div class="review">
 						<div class="content_des_title">Отзывы</div>
 						<div class="review_item">
@@ -179,9 +194,40 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 							</a>
 						</div>
 					</div>
+					-->
 				</div>
-			</div>
-		</div>
+				</div>
+				<div class="content_uslugi">
+					<div class="content_des_title">Название продукции №1</div>
+					<div class="project_item">
+						<div class="project_item_img">
+							<img src="img/chel.jpg" alt=""/>
+						</div>
+						<h2 class="project_item_title">
+							<a href=""></a>
+						</h2>
+						<div class="project_item_des">
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book....</p>
+						</div>
+					</div>
+					<div class="project_item">
+						<div class="project_item_img">
+							<img src="img/chel.jpg" alt=""/>
+						</div>
+						<h2 class="project_item_title">
+							<a href="">Название продукции №1</a>
+						</h2>
+						<div class="project_item_des">
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book....</p>
+						</div>
+					</div>
+				</div>
+						
+					</div>
+				</div>
+
 		<footer>
 			<div class="cr">
 				<div class="footer">

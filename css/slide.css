@@ -1,7 +1,9 @@
 /* Slider */
 #tops {
     position: relative;
-    margin-bottom: 24px;
+    margin-bottom: 28px;
+    overflow: hidden;
+    clear: both;
 }
 .slick-slider {
     position: relative;
@@ -128,7 +130,7 @@
     background-image: url(../img/slider_des_bg.png);
     background-repeat: no-repeat;
     background-size: contain;
-    z-index: 55;
+    z-index: 11;
 }
 .slider-description img {
     display: inline-block;

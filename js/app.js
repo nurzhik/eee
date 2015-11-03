@@ -47,25 +47,9 @@ $(document).ready(function() { // запускаем скрипт после з�
         });
     });
 
-//slider vnutrenne
-$(document).ready(function ($) {
-    $('.big-slides__item').eq(0).addClass('active');
-    $('.small-slides__item').eq(0).addClass('active');
-    $('.small-slides__item').click(function () {
-        var itemCount = $(this).index();
-        slideItems(itemCount);
-		
-    });
-	
-	
-    function slideItems(itemCount) {
-        $('.small-slides').find('.small-slides__item').eq(itemCount).addClass('active').siblings().removeClass('active');
-        $('.big-slides').find('.big-slides__item').eq(itemCount).addClass('active').siblings().removeClass('active');
-		
-    }
-});
+
 //asd
-var id_menu = new Array('sub_menu_1');
+var id_menu = new Array('sub_menu_1','sub_menu_2');
 startList = function allclose() {
 	for (i=0; i < id_menu.length; i++){
 		document.getElementById(id_menu[i]).style.display = "none";
@@ -121,20 +105,7 @@ jQuery(document).ready(function ($) {
     });
 });
 
-jQuery(document).ready(function ($) {
-    $('.prices-content-item').click(function () {
-        $(this).toggleClass('active').siblings().removeClass('active');
-    });
-});
-jQuery(document).ready(function ($) {
-    $('.search__mobile').click(function () {
-        $(this).toggleClass('active');
-        $('.search__wrapper').toggleClass('active');
-        setTimeout(function () {
-            $('.search__field').focus();
-        }, 400);
-    });
-});
+
 jQuery(document).ready(function ($) {
     $('.slider').slick({
         accessibility: false,
@@ -154,14 +125,30 @@ jQuery(document).ready(function ($) {
 });
 
 jQuery(document).ready(function ($) {
-    $('.specialist-list').slick({
+    $('.slider_des').slick({
         accessibility: false,
         autoplay: true,
-        autoplaySpeed: 3000,
-        speed: 1000,
+        autoplaySpeed: 3050,
+        speed: 1050,
         infinite: true,
         arrows: true,
-        slidesToShow: 4,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        centerPadding: 0,
+        pauseOnHover: false,
+        prevArrow: '<span class="slick-prev slick-nav slick-nav--prev" aria-label="previous"></span>',
+        nextArrow: '<span class="slick-next slick-nav slick-nav--next" aria-label="next"></span>'
+    });
+});
+jQuery(document).ready(function ($) {
+    $('.review').slick({
+        accessibility: false,
+        autoplay: true,
+        autoplaySpeed: 3050,
+        speed: 1050,
+        infinite: true,
+        arrows: true,
+        slidesToShow: 1,
         slidesToScroll: 1,
         centerPadding: 0,
         pauseOnHover: false,

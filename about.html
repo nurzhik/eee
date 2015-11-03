@@ -42,7 +42,7 @@
 								<a href="index.html" >Главная</a>
 							</li>
 							<li>
-								<a href="about.html" class="active">О компании</a>
+								<a href="about.html" class="active"  >О компании</a>
 							</li>
 							<li>
 								<a href="uslugi.html" >Услуги</a>
@@ -63,7 +63,23 @@
 								</div>
 							</li>
 							<li>
-								<a href="">Каталог товаров</a>
+								<a href="produkcia.html" >Каталог товаров</a>
+								<div id="menu_body" >
+									<ul class="product_menu">
+										<li><a href="#" onclick="openMenu('sub_menu_2');return(false)">Решение по солнцу</a>
+											<ul id="sub_menu_2" >
+												 <li><a href="#">Lorem ipsum  </a></li>
+												   <li><a href="#">Lorem ipsum  </a></li>
+											</ul>
+										</li>
+										<li><a href="#">Решение по ветру</a>
+										</li>
+										<li><a href="#">Решение по энергоэффективности</a>
+										</li>
+										<li><a href="#">Решение по биогазу</a>
+										</li>
+									</ul>
+								</div>
 							</li>
 							<li>
 								<a href="project.html" >Проекты</a>
@@ -158,27 +174,44 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 							<p>Printing  somthing like that very good website printing...</p>
 						</div>
 					</div>
-					<div class="review">
-						<div class="content_des_title">Отзывы</div>
-						<div class="review_item">
+					<div class="content_des_title">Отзывы</div>
+					<section class="review">
+						<div class="slider__item">
 							<div class="review_item_info">
-								<div class="review_item_img news_item_img">
-									<img src="img/news.jpg" alt=""/>
-								</div>
 								<div class="review_name ">Азаматов Амир Каиржанович</div>
-								<div class="review_comp ">Название компании</div>
+								<div class="review_comp ">
+								Название компании
+								</div>
 								<div class="review_prof ">должность</div>
 							</div>
 							<div class="review_text">
 								<p>
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nesciunt unde beatae perferendis harum a, praesentium eveniet consectetur sapiente accusantium dolore, omnis nam recusandae est? Nesciunt aliquid laudantium porro ut.
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nesciunt unde beatae perferendis harum a, praesentium eveniet consectetur sapiente accusantium dolore, omnis nam recusandae est? Nesciunt aliquid laudantium porro ut.
 								</p>
 							</div>
-							<a href="">
-								<div class="review_button">Оставить отзыв</div>
-							</a>
 						</div>
-					</div>
+						<div class="slider__item">
+							<div class="review_item_info">
+								<div class="review_name ">Азаматов Амир Каиржанович</div>
+								<div class="review_comp ">
+								Название компании
+								</div>
+								<div class="review_prof ">должность</div>
+							</div>
+							<div class="review_text">
+								<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nesciunt unde beatae perferendis harum a, praesentium eveniet consectetur sapiente accusantium dolore, omnis nam recusandae est? Nesciunt aliquid laudantium porro ut.
+								</p>
+							</div>
+						</div>
+						
+					</section>
+					<a href="">
+								<div class="review_button">
+									Оставить отзыв
+								</div>
+							</a>
+						
 				</div>
 			</div>
 		</div>

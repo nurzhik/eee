@@ -28,46 +28,6 @@ $(document).ready(function() { // запускаем скрипт после з�
      });
 });
 
-    $(document).ready(function () {
-        $(".sub > a").click(function() {
-            var ul = $(this).next(),
-                    clone = ul.clone().css({"height":"auto"}).appendTo(".mini-menu"),
-                    height = ul.css("height") === "0px" ? ul[0].scrollHeight + "px" : "0px";
-            clone.remove();
-            ul.animate({"height":height});
-            return false;
-        });
-           $('.mini-menu > ul > li > a').click(function(){
-           $('.sub a').removeClass('active');
-           $(this).addClass('active');
-        }),
-           $('.sub ul li a').click(function(){
-           $('.sub ul li a').removeClass('active');
-           $(this).addClass('active');
-        });
-    });
-
-
-//asd
-var id_menu = new Array('sub_menu_1','sub_menu_2');
-startList = function allclose() {
-	for (i=0; i < id_menu.length; i++){
-		document.getElementById(id_menu[i]).style.display = "none";
-	}
-}
-function openMenu(id){
-	for (i=0; i < id_menu.length; i++){
-		if (id != id_menu[i]){
-			document.getElementById(id_menu[i]).style.display = "none";
-		}
-	}
-	if (document.getElementById(id).style.display == "block"){
-		document.getElementById(id).style.display = "none";
-	}else{
-		document.getElementById(id).style.display = "block";
-	}
-}
-window.onload=startList;
 //slider index
 /*
      _ _      _       _

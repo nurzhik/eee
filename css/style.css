@@ -77,12 +77,13 @@
     font-family: "PTSansRegular";
     font-size: 14px;
     color: #797979;
-    padding: 0 20px;
+    padding: 0 10px;
     text-align: center;
     background-repeat: no-repeat;
     height: 24px;
     line-height: 23px;
-    display: block;
+    display: inline-block;
+    min-width: 120px;
 }
 .top_menu li a:HOVER{color: #fff;
     background-color: #087D36;}
@@ -161,15 +162,11 @@
     margin: 20px 0px 5px;
 }
 .product_item {
-    width: 430px;
-    height: 144px;
+    width: 25%;
     float: left;
-    margin-right: 15px;
     overflow: hidden;
     margin-bottom: 15px;
-}
-.product_item:nth-child(2n) {
-    margin-right: 0px;
+    text-align: center;
 }
 .product_item_img {
     width: 210px;
@@ -387,13 +384,16 @@ footer {
     text-decoration: underline;
 }
 .mini-menu .sub > ul {
-    counter-reset: items;
-    height: 0;
+    /* counter-reset: items; */
+    /* height: 0; */
     overflow: hidden;
 }
 
 #menu_body ul.product_menu >li > #sub_menu2{
 	left:258px;
+}
+#menu_body ul >li > ul.comp_menu {
+    width: 202px;
 }
 .mini-menu .sub > ul > li > a {
     /* counter-increment: items; */
@@ -456,11 +456,11 @@ ul.product_menu >li>ul {
 }
 #menu_body ul >li > ul {
     top: -10px;
-    left: 117px;
+    left: 136px;
     padding: 10px;
     background-color: rgba(255, 255, 255, 0);
+    /* width: 218px; */
 }
-
 
 
 
@@ -495,7 +495,7 @@ ul.product_menu >li>ul {
 #menu_body ul li ul li {
     border: 0;
     background: #1fa755;
-    width: 120px;
+    width: 100%;
 }
 #menu_body ul li ul li :HOVER {
     color: #fff;
@@ -560,4 +560,119 @@ ul.product_menu >li>ul {
 }
 #menu_body ul li a {
     text-align: left;
+}
+
+.modal_div {
+    width: 252px;
+    background: #fff;
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    border: 1px solid;
+    margin-top: -150px;
+    margin-left: -150px;
+    text-align: center;
+    display: none;
+    opacity: 0;
+    z-index: 11;
+    padding: 20px 25px;
+    /* border-radius: 11px; */
+}
+.modal_close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 8040;
+  background-color: #fff;
+  border-radius: 50%;
+  background-image: url(../img/close.svg);
+  background-repeat: no-repeat;
+  box-shadow: 0px 0px 0px 1px rgba(51, 51, 51, 0.17);
+  background-size: 10px;
+  background-position: top 8px center;
+}
+
+#modal_form {
+	width: 300px; 
+	height: 300px; /* Размеры должны быть фиксированы */
+	border-radius: 5px;
+	border: 3px #000 solid;
+	background: #fff;
+	position: fixed; /* чтобы окно было в видимой зоне в любом месте */
+	top: 45%; /* отступаем сверху 45%, остальные 5% подвинет скрипт */
+	left: 50%; /* половина экрана слева */
+	margin-top: -150px;
+	margin-left: -150px; /* тут вся магия центровки css, отступаем влево и вверх минус половину ширины и высоты соответственно =) */
+	display: none; /* в обычном состоянии окна не должно быть */
+	opacity: 0; /* полностью прозрачно для анимирования */
+	z-index: 5; /* окно должно быть наиболее большем слое */
+	padding: 20px 10px;
+}
+/* Кнопка закрыть для тех кто в танке) */
+#modal_form #modal_close {
+	width: 21px;
+	height: 21px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+	display: block;
+}
+/* Подложка */
+#overlay {
+  z-index: 9; /* подложка должна быть выше слоев элементов сайта, но ниже слоя модального окна */
+	position: fixed; /* всегда перекрывает весь сайт */
+	background-color: #000; /* черная */
+	opacity: 0.8; /* но немного прозрачна */
+	width: 100%; 
+	height: 100%; /* размером во весь экран */
+	top: 0; 
+	left: 0; /* сверху и слева 0, обязательные свойства! */
+	cursor: pointer;
+	display: none; /* в обычном состоянии её нет) */
+}
+.title_z {
+    font-family: "PTSansBold";
+    font-size: 19px;
+    margin-bottom: 14px;
+    display: block;
+    text-transform: uppercase;
+}
+.modal_f {
+    width: 250px;
+    text-indent: 10px;
+    padding: 0px;
+    border: 1px solid #1f7941;
+    outline: medium none;
+    line-height: 34px;
+    background-repeat: no-repeat;
+    background-position: 136px center;
+    display: block;
+    margin: 0px auto 14px;
+    height: 36px;
+}
+textarea.modal_f {
+    height: 60px;
+}
+#modal1 button {
+    width: 250px;
+    height: 50px;
+    border: 2px solid #134C29;
+    margin-top: 10px;
+    font-family: 'PTSansRegular';
+    text-align: center;
+    /* float: right; */
+    margin: 0 auto;
+    font-size: 16px;
+    color: #fff;
+    outline: none;
+    background-color: #087D36;
+}
+#modal1 button:hover {
+    background-color: #134C29;
+    border: 2px solid #087D36;
+	cursor:pointer;
 }

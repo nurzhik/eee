@@ -463,11 +463,10 @@ ul.product_menu >li>ul {
 }
 
 
-
 #menu_body ul:before {
     position: absolute;
-    top: -10px;
-    left: 51px;
+    top: -12px;
+    left: 64px;
     content: "";
     border: 6px solid transparent;
     border-bottom: 7px solid rgb(8, 125, 54);

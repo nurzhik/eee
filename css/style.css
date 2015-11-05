@@ -392,7 +392,7 @@ footer {
 #menu_body ul.product_menu >li > #sub_menu2{
 	left:258px;
 }
-#menu_body ul >li > ul.comp_menu {
+ .top_menu li>ul >li > ul.comp_menu {
     width: 202px;
 }
 .mini-menu .sub > ul > li > a {
@@ -419,20 +419,19 @@ ul.product_menu >li>ul {
     line-height: 12px;
 }
 
-.top_menu li:hover #menu_body {
+.top_menu li:hover .top_menu li >ul  {
     display: block;
 }
 .top_menu li:hover a{
 	color:#fff;
 }
-
-#menu_body li ul {
+.top_menu li >ul li ul {
 	display: none;
 	}
-#menu_body li:hover ul, #menu_body li.over ul {
+.top_menu li >ul  li:hover ul, .top_menu li >ul li.over ul {
 	display: block;
 	}
-#menu_body {
+.top_menu li >ul {
     height: 500px;
     position: absolute;
     top: 20px;
@@ -440,6 +439,14 @@ ul.product_menu >li>ul {
     z-index: 22;
     background-color: rgba(255, 255, 255, 0);
     display: none;
+    padding-top: 10px;
+}
+.top_menu li:hover >ul {
+    display: block;
+}
+.top_menu li >ul li {
+    background: #087D36;
+    width: 100%;
 }
 .top_menu li {
     float: left;
@@ -447,14 +454,8 @@ ul.product_menu >li>ul {
     position: relative;
     min-width: 120px;
 }
-#menu_body ul {
-    top: 11px;
-    left: 0;
-    position: absolute;
-    background: #087D36;
-    z-index: 55;
-}
-#menu_body ul >li > ul {
+
+.top_menu li >ul  >li > ul {
     top: -10px;
     left: 136px;
     padding: 10px;
@@ -462,10 +463,12 @@ ul.product_menu >li>ul {
     /* width: 218px; */
 }
 
-
-#menu_body ul:before {
+.top_menu li >ul li> ul li:hover {
+    background: #1fa755;
+}
+.top_menu li > ul:before {
     position: absolute;
-    top: -12px;
+    top: -2px;
     left: 64px;
     content: "";
     border: 6px solid transparent;
@@ -474,7 +477,7 @@ ul.product_menu >li>ul {
     width: 0;
     height: 0;
 }
-#menu_body ul >li > ul:before {
+.top_menu li >ul >li > ul:before {
     position: absolute;
     top: 18px;
     left: 1px;
@@ -485,18 +488,18 @@ ul.product_menu >li>ul {
     width: 0;
     height: 0;
 }
-#menu_body ul li a:hover {
+.top_menu li >ul li a:hover {
 
     text-decoration: underline;
 
     } 
 
-#menu_body ul li ul li {
+.top_menu li >ul  li> ul li {
     border: 0;
     background: #1fa755;
     width: 100%;
 }
-#menu_body ul li ul li :HOVER {
+.top_menu li >ul  li ul li :HOVER {
     color: #fff;
     background-color: #1fa755;
 }
@@ -530,7 +533,7 @@ ul.product_menu >li>ul {
 
 /*проекты конец*/
 /*product*/
-.product_menu {
+.top_menu li >ul.product_menu {
     width: 258px;
 }
 
